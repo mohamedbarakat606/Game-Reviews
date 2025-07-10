@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Home</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- head Image -->
+    <div class="container-fluid w-100 position-relative">
+      <img src="img/wraper.png" alt="bg-img" />
+    </div>
+
+    <!-- Navbar Sticky  -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg sticky-top">
+      <div class="container-fluid">
+        <div class="brand d-flex justify-content-center align-items-center">
+          <img
+            src="img/logo-sm.png"
+            alt="pic"
+            class="logo bg-transparent"
+          />
+          <a class="navbar-brand nerko-one-regular ms-2" href="#"
+            >Game Reviews
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav comfortaa">
+            <a class="nav-link active" aria-current="page" href="#">mmorpg</a>
+            <a class="nav-link" href="#">shooter</a>
+            <a class="nav-link" href="#">sailing</a>
+            <a class="nav-link" href="#">permadeath</a>
+            <a class="nav-link" href="#">superhero</a>
+            <a class="nav-link" href="#">pixel</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Game Data  -->
+    <div class="container my-3 rounded-1">
+      <div id="cardContainer" class="row ">
+
+        <!-- Card That display.js will create -->
+
+      </div>
+    </div>
+
+    <!-- Game Details Section (hidden by default) -->
+<div id="gameDetails" class="row g-4 d-none mt-5">
+  <div class="header d-flex justify-content-between align-items-center">
+    <h1 class="nerko-one-regular text-light py-3">Game Details</h1>
+    <a id="backBtn" style="cursor:pointer;"><i class="fa-solid fa-xmark fs-2 text-light"></i></a>
+  </div>
+
+  <div class="col-md-4">
+    <img id="gimg" src="img/imgi_161_thumbnail.jpg" alt="GamePic" class="w-100" />
+  </div>
+  <div class="col-md-8 text-light">
+    <h3 id="h3" class="comfortaa my-3">Title: </h3>
+    <p>Category: <span id="span1"></span></p>
+    <p>Platform: <span id="span2"></span></p>
+    <p>Status: <span id="status"></span></p>
+    <p>Short Description: <span id="gameDescription"></span></p>
+    <a class="text-decoration-none btn btn-outline-primary" id="anker">Show Game</a>
+  </div>
+</div>
+
+
+    <!-- loading Screen -->
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+
+    <script src="js/all.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
